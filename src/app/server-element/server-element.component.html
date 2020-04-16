@@ -1,0 +1,10 @@
+<div class="card w-100">
+	<h5 class="card-header">{{ element.name }}</h5>
+	<div class="card-body" style="height:3.5rem">
+		<p class="card-text">
+			<strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
+			<em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
+		</p>
+	</div>
+</div>
+<br>
